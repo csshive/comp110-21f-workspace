@@ -1,4 +1,4 @@
-"""Hype program to boost spirits"""
+"""Hype program to boost spirits."""
 __author__: str = "730330844"
 
 name: str = input("What is your name?")

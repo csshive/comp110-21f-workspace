@@ -1,4 +1,4 @@
-"""Practicing with numeric operators, type conversions, and string concatenation"""
+"""Practicing with numeric operators, type conversions, and string concatenation."""
 __author__: str = "730330844"
 
 left_side_number: int = int(input("Left-hand side: "))

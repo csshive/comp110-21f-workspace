@@ -1,4 +1,4 @@
-"""Practicing the relaional operators individually"""
+"""Practicing the relaional operators individually."""
 __author__: str = "730330844"
 
 left_side_number: int = int(input("Left-hand side: "))
