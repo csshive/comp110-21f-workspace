@@ -6,18 +6,17 @@ letter = 0
 user_letter: str = input("What letter do you want to seach for?: ")
 user_word: str = input("Enter a word: ")
 
-
+len()
 
 for i in range(0, len(str)): 
     ch = str[i]
 if ( (ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z') ): ch = ch.lower()
 if (ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch == 'u'):letter += 1
             
-#while
+while
 s
-#while (*str)
+while (*str)
+user_letter > 0:
+    print ("Count")
 
-#user_letter > 0:
-    #print ("Count")
-
-#i = i + 1
+i = i + 1
