@@ -2,7 +2,6 @@
 
 __author__ = "730330844"
 
-
 counter: int = 0
 i: str = ""
 user_string_beat: str = input("What beat do you want to repeat? ")
