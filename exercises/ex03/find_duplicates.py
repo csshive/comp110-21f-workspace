@@ -9,7 +9,7 @@ while i < len(user_word):
     char = user_word[0]
     j: int = i + 1 
     while j < len(user_word):
-        dup = char == j #make comparison between char and what's at index j
+        dup = char == j 
         j += 1
     i += 1
 
