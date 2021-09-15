@@ -6,10 +6,10 @@ user_word: str = input("Enter a word: ")
 dup: bool = False 
 i: int = 0
 while i < len(user_word):
-    char = user_word[0]
+    char: str = str(user_word[i])
     j: int = i + 1 
     while j < len(user_word):
-        dup = char == j 
+        dup = str(char) == str(user_word[j]) 
         j += 1
     i += 1
 

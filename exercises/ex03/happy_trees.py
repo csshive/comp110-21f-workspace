@@ -10,6 +10,6 @@ user_depth: int = int(input("Depth: "))
 counter: int = 0
 i: str = ""
 while counter < int(user_depth):
-    i = str = TREE
+    i = str = (TREE * user_depth)
     print(i)
     counter = counter + 1
