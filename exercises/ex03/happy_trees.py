@@ -7,9 +7,9 @@ __author__ = "730330844"
 TREE: str = '\U0001F332'
 
 user_depth: int = int(input("Depth: ")) 
-counter: int = 0
-i: str = ""
-while counter < int(user_depth):
-    i = str = (TREE * user_depth)
-    print(i)
-    counter = counter + 1
+i: int = 0 
+counter: int = 0 + 1
+while counter < int(user_depth + 1):
+    print(TREE * counter)
+    i = i + 1
+    counter = counter + 1 

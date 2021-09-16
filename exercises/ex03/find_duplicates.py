@@ -11,6 +11,6 @@ while i < len(user_word):
     while j < len(user_word):
         dup = str(char) == str(user_word[j]) 
         j += 1
-        if dup == True: 
+        if dup is True: 
             print("Found duplicate: " + str(dup))
     i += 1
