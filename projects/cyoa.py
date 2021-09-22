@@ -13,15 +13,12 @@ CAT_EMOJI: str = U"\U0001F408"
 
 def main() -> None: 
     """The program's entrypoint."""
-    message = greet()
-    print(message)
-
+    print(greet())
     game_start = "yes"
     while game_start == "yes":
         choice: str = input(f'Would you like to a) feed and bathe {pet_name}, b) play and dress up {pet_name}, or c) end the experience? Please type the lowercase letter of your choice. ')
         if choice == "a":
-            feed = feed_bathe()
-            print(feed)
+            print(feed_bathe())
         if choice == "b":
             play_points = play(3, 7)
             print(play_points)
@@ -51,27 +48,27 @@ def feed_bathe() -> None:
         if happiness_level <= 2: 
             if happiness_level < 2:
                 print(f"{pet_name} is happy to be be your pet!") 
-                points: int = points + 10
+                points = points + 10
                 print(f'You are awarded 10 points for checking on, {pet_name}! ')
             else:
                 print(f"{pet_name} feels dirty and wants to take a bath! ") 
-                points: int = points + 10
+                points = points + 10
                 print(f'You are awarded 10 points for checking on, {pet_name}! ')
         else: 
             if happiness_level == 3: 
                 print(f"{pet_name} is feeling extra playful!") 
-                points: int = points + 10
+                points = points + 10
                 print(f'You are awarded 10 points for checking on, {pet_name}! ')
             else:
                 print(f"{pet_name} is sad. Maybe dressing {pet_name} up will make {pet_name} feel better.") 
-                points: int = points + 10
+                points = points + 10
                 print(f'You are awarded 10 points for checking on, {pet_name}! So far, you have {points} points!')
     global final_point
     final_point = (final_point + points)
 
 
 def play(a: int, b: int) -> int: 
-    """Returns 10 points for play"""
+    """Returns 10 points for play."""
     print(f"Thanks for playing with {pet_name}! You got 7 additional points")
     global final_point
     final_point = (final_point + points + b)
