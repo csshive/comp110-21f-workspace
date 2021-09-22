@@ -13,12 +13,12 @@ CAT_EMOJI: str = U"\U0001F408"
 
 def main() -> None: 
     """The program's entrypoint."""
-    print(greet())
+    greet()
     game_start = "yes"
     while game_start == "yes":
         choice: str = input(f'Would you like to a) feed and bathe {pet_name}, b) play and dress up {pet_name}, or c) end the experience? Please type the lowercase letter of your choice. ')
         if choice == "a":
-            print(feed_bathe())
+            feed_bathe()
         if choice == "b":
             play_points = play(3, 7)
             print(play_points)
