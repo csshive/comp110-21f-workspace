@@ -7,7 +7,5 @@ user_word: str = input("Enter a word: ")
 count: int = 0
 i: int = 0  
 while i < len(user_word):
-    if(user_word[i] == user_letter):
-        count = count + 1
-    i = i + 1
+   c
 print("Count: " + str(count))
