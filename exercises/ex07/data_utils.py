@@ -4,6 +4,8 @@ __author__ = "730330844"
 
 from csv import DictReader
 
+from tabulate import tabulate
+
 
 def read_csv_rows(filename: str) -> list[dict[str, str]]:
     """Read the rows of a csv into a table."""
