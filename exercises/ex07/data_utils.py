@@ -36,25 +36,23 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
 
 def head(column_table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
     """Produce a new column-based table with only the first N rows of data for each column."""
-    result: dict[str, list[str]] = {}
-    # 1. Establish an empty dictionary that will serve as the returned dictionary this function is building up.
+    result: dict[str, list[str]] = {}   
+ # 1. Establish an empty dictionary that will serve as the returned dictionary this function is building up.
     # 2. Loop through each of the columns in the first row of the table given as a parameter.
     #   A. Inside of the loop, establish an empty list to store each of the first N values in the column
     #   B. Loop through the first N items of the table's column,
     #       a. Appending each item to the previously list established in step 2.1.
     #   C. Assign the produced list of column values to the dictionary established in step 1.
     return result
-    # Return the dictionary.
+    # Return the dictionary. 
 
 
 def select(column_table: dict[str, list[str]], names: list[str]) -> dict[str, list[str]]:
     """Produce a new column-based table with only a specific subset of the original columns"""
     result: dict[str, list[str]] = {}
-    # 1. Establish an empty dictionary that will serve as the returned dictionary this function is building up.
-    # 2. Loop through each of the columns in the second parameter of the function
-    #   A. Assign to the column key of the result dictionary the list of values stored in the input dictionary at the same column
+    for item in names:
+        result[item] = column_table[item]
     return result
-    # 3.Return the dictionary produced
 
         
 def concat(column_table_one: dict[str, list[str]], column_table_two: dict[str, list[str]]) -> dict[str, list[str]]:
